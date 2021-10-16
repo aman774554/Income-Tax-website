@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+ <head>
+        
+    <link type="text/css" rel="stylesheet" href="style.css">
+        <title>
+        INCOME TAX DEPARTMENT OF INDIA
+        </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+    </head>
+<body class="bodyy">
+    <header>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 15px;">
+           <a href="index.html">
+           <img  height="140px" width="180px" src="logo.png"></a>
+  <a class="navbar-brand" href="#"><p class="size_main">INCOME TAX DEPARTMENT OF INDIA</p></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">ABOUT US <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">FEEDBACK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ACCESSBILITY</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT US</a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+</header>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+body{
+
+
+
+}
+
+
+
+
+
+
+
+
+*{
+box-sizing:border-box;
+}
+body{
+padding-top:1em;
+}
+.wrapper{
+max-width:700px;
+margin:0 auto;
+padding:1em;
+background:#f9f9f9;
+border:4px solid grey;
+}
+h3{
+margin:0;
+}
+input:focus,
+textarea:focus{
+outline:3ox solid gold;}
+
+.wrapper>*{
+padding:1em;
+}
+form label{
+display:block;
+}
+form p{
+margin:0;
+}
+button,
+input,textarea {
+padding:1em;
+}
+button{
+background: lightgrey;
+width:100%;
+border:1px solid grey;
+}
+button:hover,button:focus{
+background:808000;
+outline:0;
+}
+form{
+display:grid;
+grid-template-columns:2fr 1fr;
+grid-gap:20px;
+}
+form p{
+grid-column:1/2;
+}
+.input-file-wrapper{
+grid-column:2/3;
+grid-row:1/2;
+}
+
+div.title{
+border:1px solid #ddd;
+}
+
+u{
+color:darkblue;}
+
+div.footer{
+border:2px solid #c1c1c1;
+position:absolute;
+padding:0.2rem;
+background-color:#efefef;
+width:1520px;
+}
+
+</style>
+</head>
+<body onload="generateCaptcha()">
+
+<br>
+<div class="wrapper">
+<h3>Login Form</h3>
+
+
+
+
+
+<form class="myform" action="#" onSubmit="check()">
+
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp<label for="username" id="un">Username:
+</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"name="user" placeholder="Enter Username" id="uname" required><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp<label for="upass" id="ps">Password:</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp<input type="password" name="pass" placeholder="Enter password" id="upass" required><br><br>
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp<label for="captcha"> Captcha Code</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="captcha" id="captcha" disabled><br><br>
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp<label for="inputText"> Enter Captcha Code</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="inputText" id="inputText" required><br><br>
+
+
+
+
+
+
+ 
+
+&nbsp&nbsp&nbsp&nbsp&nbsp<button onclick="generateCaptcha()">Refresh</button>
+&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" value="Submit" id="submit">Submit</button></p>
+
+
+</form>
+
+
+<script>
+var captcha;
+function generateCaptcha(){
+
+var a = Math.floor((Math.random() * 10));
+var b = Math.floor((Math.random() * 10));
+var c = Math.floor((Math.random() * 10));
+var d = Math.floor((Math.random() * 10));
+
+captcha=a.toString()+b.toString()+c.toString()+d.toString();
+document.getElementById("captcha").value = captcha;
+}
+function check(){
+var input=document.getElementById("inputText").value;
+
+if(input==captcha){
+alert("Login Successful !!");
+}
+else if(input!=captcha){
+alert("Incorrect Captcha Code entered!!");
+}
+}
+</script>
+
+<br>&nbsp&nbsp&nbsp&nbsp&nbspNew User ?? <a href=""> Register</a>
+</div>
+<br>
+<label for="T&C"><u> <h4>Terms & Conditions</h4></u></label>
+<p> 
+<pre> <ul><li> Make  sure that the details entered are correct</li>
+<li> Password should be strong</li>
+<li> User Id  is not case sensitive</li>
+<li> Click on check button before submit the form</li></ul>
+
+</pre>
+</p>
+</p>
+<p>
+</div>
+<p class="links">
+<button> <a href="">Home</a></button><button> <a href="">Accessibility</a></button><button> <a href="">Contact Us</a></button><button> <a href="">Feedback</a></button><button> <a href="">About Us</a></button>
+</p>
+
+
+<div class="footer">
+
+<footer>
+<p><pre>
+ <u color="#00008B" font-size="20">india.gov.in</u><br>
+ <u color="navyblue" font-size="10">national portal of india</u>
+Website Policies | Accessibilitity Statement 
+Copyright &copy Income Tax Department, Minisitry of Finance,Government of India.
+All Right Reserved | site Last Updated on 15/04/2019 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp              <img src="f.jpg.jpg" width="500px" height="40px"></pre>
+</p>
+
+</footer></div>
+
+
+</body>
+</html>

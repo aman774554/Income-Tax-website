@@ -1,0 +1,236 @@
+<!doctype html>
+
+
+
+<head>
+        
+    <link type="text/css" rel="stylesheet" href="style.css">
+        <title>
+        INCOME TAX DEPARTMENT OF INDIA
+        </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+    </head>
+<body class="bodyy">
+    <header>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 15px;">
+           <a href="index.html">
+           <img  height="140px" width="180px" src="logo.png"></a>
+  <a class="navbar-brand" href="#"><p class="size_main">INCOME TAX DEPARTMENT OF INDIA</p></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="aman1/html_About.html">ABOUT US <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="feedback.html">FEEDBACK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="accessibility.html">ACCESSBILITY</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="aman1/contact_us.html">CONTACT US</a>
+      </li>
+
+
+    </ul>
+  </div>
+
+</nav>
+</header>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+body{
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.footer{
+border:2px solid #c1c1c1;
+position:absolute;
+padding:0.2rem;
+background-color:#efefef;
+width:1520px;
+
+}
+
+
+
+
+
+
+
+
+
+div.d2{
+text-align:right;}
+
+
+p.p2{
+text-align:center;
+color:#0000CD;}
+body{
+}
+p.p1{
+font-size:18px;
+color:#00008B;}
+u{
+color:#00008B;
+font-size:15px;
+}
+div.title{
+border:1px solid grey;}
+         
+
+
+  .myForm {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-auto-flow: row dense;
+    grid-gap: .8em;
+    background: #eee;
+    padding: 1.2em;
+border:4px solid grey;
+  }
+  .myForm > label  {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .myForm > input,
+  .myForm > button {
+    grid-column: 2;
+    grid-row: auto;
+    padding: 1em;
+    border: 2px solid #ddd;
+
+  }
+  .myForm textarea {
+   min-height: calc(100% - 2em);
+   width: 100%;
+   border: none;
+background-color:grey;
+  }
+  #comment-box {
+   grid-column: 3;
+   grid-row: span 3;
+  }
+  .myForm > button {
+   grid-column: 2 / 4; 
+  }
+</style>
+
+
+<body onload="generateCaptcha()">
+<br>
+<div class="p0">
+<p class="p1"> Check instant e-Pan status and download e-pan<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form class="myForm">
+  <label for="Acknowledgement_number">Acknowledgement Number </label>
+  <input type="number" name="Acknowledgement_number" id="Acknowledgement_number" required>
+  <label for="captcha"> Captcha Code</label>
+<input type="text" name="captcha" id="captcha" disabled>
+
+
+  <label for="inputText"> Enter Captcha Code</label>
+<input type="text" name="inputText" id="inputText" required>
+
+
+
+  <div id="comment-box">
+  	<label for="comments">e-PAN</label>
+  	
+  <p>Income TAx Department is very thankful to the applicants and the participants for the Beta version of Instant e-PAN for a positive and overwhelming response. The feedback/suggestions received from the applicants and other aspects ofthe Beta version of this facility
+are being examined and a full scale production version wold be launched at a later date.</p>
+
+
+
+</div>
+
+
+<script>
+var captcha;
+function generateCaptcha(){
+
+var a = Math.floor((Math.random() * 10));
+var b = Math.floor((Math.random() * 10));
+var c = Math.floor((Math.random() * 10));
+var d = Math.floor((Math.random() * 10));
+
+captcha=a.toString()+b.toString()+c.toString()+d.toString();
+document.getElementById("captcha").value = captcha;
+}
+function check(){
+var input1=document.getElementById("inputText").value;
+var input2=document.getElementById("Acknowledgement_number").value;
+
+
+
+if(input1==captcha && input2!=0){
+alert("You submitted successfully!!");
+}
+else {
+alert(" Please Enter Valid Code and valid number");
+}
+
+}
+
+
+
+</script>
+
+<button onclick="generateCaptcha()">Refresh</button>
+<button type="submit" onclick="check()" >Submit</button>
+
+
+<br>
+</form>
+<br>
+<div class="footer">
+<footer>
+<p><pre>
+ <u color="#00008B" font-size="20">india.gov.in</u><br>
+ <u color="navyblue" font-size="10">national portal of india</u>
+Website Policies | Accessibilitity Statement
+Copyright &copy Income Tax Department, Minisitry of Finance,Government of India.
+All Right Reserved | site Last Updated on 15/04/2019 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp              <img src="f.jpg.jpg" width="500px" height="40px"></pre>
+</p>
+
+</footer></div>
+</body>
+</html>

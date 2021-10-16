@@ -1,0 +1,224 @@
+<!doctype html>
+
+ <head>
+        
+    <link type="text/css" rel="stylesheet" href="style.css">
+        <title>
+        INCOME TAX DEPARTMENT OF INDIA
+        </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+    </head>
+<body class="bodyy">
+    <header>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 15px;">
+           <a href="index.html">
+           <img  height="140px" width="180px" src="logo.png"></a>
+  <a class="navbar-brand" href="#"><p class="size_main">INCOME TAX DEPARTMENT OF INDIA</p></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+     <li class="nav-item active">
+        <a class="nav-link" href="aman1/html_About.html">ABOUT US <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="feedback.html">FEEDBACK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="accessibility.html">ACCESSBILITY</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="aman1/contact_us.html">CONTACT US</a>
+      </li>
+
+
+    </ul>
+  </div>
+
+</nav>
+</header>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+body{
+
+
+
+}
+
+  .myForm {
+    display: grid;
+    grid-template-areas: 
+      "customer taxi"
+      "customer extras"
+      "pickup dropoff"
+      "instructions instructions"
+      "submit submit";
+  	grid-template-columns: auto auto;  
+  	grid-template-rows: auto auto auto auto;
+    grid-gap: .8em .5em;
+    background: #eee;
+    padding: 1.2em;
+border:4px solid grey;
+  }
+  .myForm textarea {
+    height: calc(100% - 1.5em);
+    }
+  .myForm button {
+    background: gray;
+    color: white;
+    padding: 1em;
+
+    border: 2px solid #ddd;
+    }
+  .myForm input:not([type=radio]):not([type=checkbox]), 
+  .myForm textarea, 
+  .myForm select {
+   	width: 100%;
+    border: 0;
+    padding: 1em;
+    margin: .5em 0;
+
+    border: 3px solid #ddd;
+  }
+  .myForm label {
+   display: block; 
+  }
+  fieldset {
+    border: 0;
+  }
+  #customer {
+    grid-area: customer;
+  }
+  #taxi {
+    grid-area: taxi;
+  }
+  #extras {
+    grid-area: extras;
+  }
+  #pickup {
+    grid-area: pickup;
+  }
+  #dropoff {
+    grid-area: dropoff;
+  }
+  #instructions {
+    grid-area: instructions;
+  }
+  #submit {
+    grid-area: submit;
+  }
+
+div.d2{
+text-align:right;}
+
+
+
+
+u{
+color:#00008B;
+font-size:15px;
+}
+
+div.title{
+border:1px solid #ddd;
+}
+div.footer{
+border:2px solid #c1c1c1;
+position:absolute;
+padding:0.2rem;
+background-color:#efefef;
+width:1520px;
+}
+
+
+
+
+
+</style>
+
+
+
+<body>
+
+
+
+<script>
+
+function msgs()
+{
+
+alert("Successfully Submitted!!");
+
+}
+
+
+
+</script>
+
+
+
+<form class="myForm"  name="myform" onsubmit="return(msgs());">
+  <fieldset id="customer">
+    <label for="customer_name">Name as per PAN details </label>
+    <input type="text" name="customer_name" id="customer_name" placeholder="XXXX-XXXX" required>
+
+    <label for="Aadhar_number">Aadhar Number </label>
+    <input type="number" name="Aadhar_number" id="Aadhar_number" placeholder="XXXX-XXXX-XXXX" required>
+
+    
+  </fieldset>
+  <fieldset id="taxi">
+    <legend>Gender as per PAN details</legend>
+    <label> <input type="radio" name="taxi" id="taxi_car" required value="male"> Male </label>
+    <label> <input type="radio" name="taxi" id="taxi_van" required value="female"> Female </label>
+  
+  </fieldset>
+
+  
+  <fieldset id="pickup">
+    <label for="pickup_time">Date of Birth as per PAN details</label>
+    <input type="date" name="pickup_time" id="pickup_time" required>
+
+    
+  </fieldset>
+
+  
+  <fieldset id="instructions">
+    <label for="comments">Special Instructions</label>
+  <p>
+<ul class="pal">
+<li>Please verify if the Name, Date of Birth, Gender as per the Aadhar card matches the detail as per your PAN data. Enteryour Aadhar number in the text box 
+provided below and Click on "Link Aadhar" button </li>
+<li>Income Tax Department will validate your Name, Date of birth, Gender as per the Aadhar Number with UIDAI. Please note that if the details do not match, the Aadhar
+Number will not linked to your PAN.</li>
+<li>Once the validation is successful, your Aadhar will be successfully linked to your PAN.
+
+
+</ul>
+  </fieldset>
+<br>
+  <button id="submit" type="submit">Link Aadhar</button>
+</form>
+<br>
+<div class="footer">
+
+<footer>
+<p><pre>
+ <u color="#00008B" font-size="20">india.gov.in</u><br>
+ <u color="navyblue" font-size="10">national portal of india</u>
+Website Policies | Accessibilitity Statement
+Copyright &copy Income Tax Department, Minisitry of Finance,Government of India.
+All Right Reserved | site Last Updated on 15/04/2019 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp              <img src="f.jpg.jpg" width="500px" height="40px"></pre>
+</p>
+
+</footer></div>
+
+</body>
+</html>
